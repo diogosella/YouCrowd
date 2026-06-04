@@ -31,6 +31,7 @@
     font-weight: 700;
     color: var(--muted);
     background: var(--paper);
+    overflow: hidden;
 }
 
 .pipelineBadge.isActive {
@@ -41,6 +42,13 @@
 .pipelineBadge.isDone {
     color: var(--navy);
     background: var(--lime);
+}
+
+.pipelineSpinner {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    display: block;
 }
 
 .pipelineLabel {
