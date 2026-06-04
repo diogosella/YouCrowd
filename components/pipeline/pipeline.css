@@ -1,0 +1,63 @@
+.pipelineRow {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.pipelineStep {
+    flex: 1 1 180px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 11px 13px;
+}
+
+.pipelineStep.isActive {
+    background: var(--navy);
+    border-color: var(--navy);
+}
+
+.pipelineBadge {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--muted);
+    background: var(--paper);
+}
+
+.pipelineBadge.isActive {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.pipelineBadge.isDone {
+    color: var(--navy);
+    background: var(--lime);
+}
+
+.pipelineLabel {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.pipelineLabel.isActive {
+    color: #fff;
+}
+
+.pipelineSub {
+    font-size: 10.5px;
+    color: var(--muted);
+}
+
+.pipelineSub.isActive {
+    color: rgba(255, 255, 255, 0.6);
+}

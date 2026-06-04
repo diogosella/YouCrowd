@@ -1,0 +1,9 @@
+.disclaimer {
+    margin-top: 14px;
+    background: rgba(159, 216, 10, 0.12);
+    border: 1px solid rgba(159, 216, 10, 0.4);
+    padding: 13px 17px;
+    font-size: 13px;
+    color: var(--navy);
+    line-height: 1.5;
+}
