@@ -12,7 +12,13 @@ export default function Pipeline({ steps }: { steps: PipelineStep[] }) {
           <div
             className={`pipelineBadge${s.active ? " isActive" : ""}${s.done ? " isDone" : ""}`}
           >
-            {s.done ? "✓" : i + 1}
+            {s.done ? (
+              "✓"
+            ) : s.active ? (
+              <img className="pipelineSpinner" src="/assets/loading-gif.gif" alt="carregando" />
+            ) : (
+              i + 1
+            )}
           </div>
           <div>
             <div className={s.active ? "pipelineLabel isActive" : "pipelineLabel"}>
